@@ -1,0 +1,58 @@
+.alignedgoals-wrapper {
+	display: flex;
+}
+.alignedgoals-wrapper>div{
+	margin:2%;
+	width: 20%;
+}
+.agent-goals {
+	margin-top: 2%;
+}
+
+
+.tip {
+	position:relative;
+	width:18px;
+	height:25px;
+	display: inline-block;
+}
+.tip>div {
+	position:absolute;
+	right:0;
+	top:0;
+	border-width:0 0 3px 3px;
+	border-style: dashed;
+	border-color: #d8d0d0;
+	padding:6px 4px;
+}
+.tip div::before {
+	position:absolute;
+	content: "";
+	border-width:6px;
+	border-style: solid;
+	border-color: transparent transparent #d8d0d0;
+	bottom: 12px;
+  right: 4px;
+}
+img {
+	width: 25px;
+	height: 25px;
+}
+.managergoal-desc, .agentgoal-desc {
+	display: inline-block;
+	width:calc(100% - 53px);
+	margin-left: 10px;
+	vertical-align: top;
+	overflow: hidden;
+  height: 21px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.managergoal-desc {
+	width:calc(100% - 35px);
+	color: white;
+}
+.agentgoal-desc {
+	width:calc(100% - 53px);
+	color: antiquewhite;
+}
